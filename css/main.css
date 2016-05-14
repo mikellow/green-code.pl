@@ -1,0 +1,275 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.pageContent {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: block;
+}
+.pageContent #welcome {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.pageContent #welcome .left {
+  vertical-align: middle;
+  display: table-cell;
+  width: 50%;
+}
+.pageContent #welcome .right {
+  vertical-align: middle;
+  display: table-cell;
+  width: 50%;
+}
+.pageContent #offer {
+  display: block;
+  background-color: white;
+}
+.pageContent #offer ul {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+}
+.pageContent #offer ul li {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid green;
+}
+.pageContent #offer ul li h4 {
+  overflow: hidden;
+  padding: 0px 5px;
+  margin: 0px 5px;
+  margin-top: -2px;
+  margin-bottom: -2px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  background-color: white;
+}
+.pageContent #offer ul li:hover {
+  animation-name: goGreen;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+.pageContent #offer ul li:hover h4 {
+  animation-name: expandGreen;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes goGreen {
+  from {
+    border: 1px solid green;
+    color: black;
+  }
+  to {
+    border: 1px solid black;
+    color: green;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@-webkit-keyframes goGreen {
+  from {
+    border: 1px solid green;
+    color: black;
+  }
+  to {
+    border: 1px solid black;
+    color: green;
+  }
+}
+@-moz-keyframes goGreen {
+  from {
+    border: 1px solid green;
+    color: black;
+  }
+  to {
+    border: 1px solid black;
+    color: green;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@-o-keyframes goGreen {
+  from {
+    border: 1px solid green;
+    color: black;
+  }
+  to {
+    border: 1px solid black;
+    color: green;
+  }
+}
+@keyframes expandGreen {
+  to {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@-webkit-keyframes expandGreen {
+  to {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@-moz-keyframes expandGreen {
+  to {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@-o-keyframes expandGreen {
+  to {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.green {
+  color: green;
+}
+
+.label {
+  padding: 0px 5px;
+  font-weight: bold;
+}
+
+.randomDelay span {
+  opacity: 0;
+  animation-name: easeInLetter;
+  animation-duration: 1.0s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+.randomDelay span:nth-child(1) {
+  animation-delay: 1s;
+}
+.randomDelay span:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.randomDelay span:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.randomDelay span:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.randomDelay span:nth-child(5) {
+  animation-delay: 0.6s;
+}
+.randomDelay span:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.randomDelay span:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.randomDelay span:nth-child(8) {
+  animation-delay: 1.1s;
+}
+.randomDelay span:nth-child(9) {
+  animation-delay: 1.4s;
+}
+.randomDelay span:nth-child(10) {
+  animation-delay: 1.5s;
+}
+.randomDelay span:nth-child(11) {
+  animation-delay: 0.3s;
+}
+.randomDelay span:nth-child(12) {
+  animation-delay: 1.5s;
+}
+.randomDelay span:nth-child(13) {
+  animation-delay: 0.5s;
+}
+.randomDelay span:nth-child(14) {
+  animation-delay: 0.5s;
+}
+.randomDelay span:nth-child(15) {
+  animation-delay: 0.1s;
+}
+.randomDelay span:nth-child(16) {
+  animation-delay: 0.4s;
+}
+.randomDelay span:nth-child(17) {
+  animation-delay: 0.7s;
+}
+.randomDelay span:nth-child(18) {
+  animation-delay: 1.3s;
+}
+.randomDelay span:nth-child(19) {
+  animation-delay: 0.9s;
+}
+.randomDelay span:nth-child(20) {
+  animation-delay: 1s;
+}
+.randomDelay span:nth-child(21) {
+  animation-delay: 0.2s;
+}
+.randomDelay span:nth-child(22) {
+  animation-delay: 1.4s;
+}
+.randomDelay span:nth-child(23) {
+  animation-delay: 1.3s;
+}
+.randomDelay span:nth-child(24) {
+  animation-delay: 0.6s;
+}
+.randomDelay span:nth-child(25) {
+  animation-delay: 0.7s;
+}
+.randomDelay span:nth-child(26) {
+  animation-delay: 1.3s;
+}
+.randomDelay span:nth-child(27) {
+  animation-delay: 0.1s;
+}
+.randomDelay span:nth-child(28) {
+  animation-delay: 0.3s;
+}
+.randomDelay span:nth-child(29) {
+  animation-delay: 0.5s;
+}
+.randomDelay span:nth-child(30) {
+  animation-delay: 0.6s;
+}
+
+@-webkit-keyframes easeInLetter {
+  /*100% { -webkit-transform: rotate(360deg);}*/
+  form {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes easeInLetter {
+  /*100% { -webkit-transform: rotate(360deg);}*/
+  form {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes easeInLetter {
+  /*100% { -webkit-transform: rotate(360deg);}*/
+  form {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes easeInLetter {
+  /*100% { -webkit-transform: rotate(360deg);}*/
+  form {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
