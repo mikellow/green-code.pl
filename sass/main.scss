@@ -103,7 +103,7 @@ nav {
                     display: inline-block;
                     width: 35px;
                     height: 19px;
-                    background-image: url("/img/logo-ico.png");
+                    background-image: url("../img/logo-ico.png");
                     background-size: 100% auto;
                     background-repeat: no-repeat;
                 }
@@ -185,12 +185,40 @@ section {
 }
 
 #askUsFormToggle {
+<<<<<<< HEAD
     display: none;
     position: fixed;
+=======
+    position: absolute;
+>>>>>>> askUsForm
     top:0px;
-    left:0px;
+    right:0px;
     z-index: 999;
-    background-color: green;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    border: 5px solid white;
+    border-radius: 30px;
+    margin:10px;
+    width: 100px;
+    height: 100px;
+
+    button {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        padding:0px;
+        border: none;
+        font-size: 50px;
+        line-height: 100px;
+        color: white;
+    }
+
 }
 
 #askUsForm {
@@ -200,14 +228,43 @@ section {
     left:0px;
     z-index: 300;
     background-color: red;
+    transform: translateX(100%);
 
     &.hidden {
-        transform : translateX(25vw);
+        /* transform : translateX(25vw); */
+        animation-name: hideToLeft;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
     }
     &.visible {
-        transform : translateX(0);
+        /*transform : translateX(0);*/
+        animation-name: showFromLeft;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
     }
 }
+
+@keyframes hideToLeft {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes showFromLeft {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
 
 .welcome-text {
     /*border: 1px solid red;*/
