@@ -34,6 +34,7 @@ h2.center {
 /* main parts */
 nav.top-menu {
   position: relative;
+  z-index: 999;
 }
 nav.top-menu .desktop {
   position: fixed;
@@ -73,7 +74,7 @@ nav.top-menu .desktop .logo-icon {
   display: inline-block;
   width: 35px;
   height: 19px;
-  background-image: url("../img/logo-ico.png");
+  background-image: url("/img/logo-ico.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -140,6 +141,14 @@ section.half-page {
   min-height: 50%;
 }
 
+#askUsForm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 300;
+  background-color: red;
+}
+
 .welcome-text {
   /*border: 1px solid red;*/
   position: relative;
@@ -197,7 +206,7 @@ section.half-page {
   height: 0;
   /*border-image: url(https://s22.postimg.org/e3d7gukdt/bg_pattern_2.png);*/
   /* filter: url(https://s22.postimg.org/e3d7gukdt/bg_pattern_2.png); */
-  filter: url(..../img/pattern.svg);
+  filter: url(../img/pattern.svg);
   /*filter: blur(20px);*/
   border-top: 36vh solid #28735F;
   border-left: calc(36vh*1.3) solid #28735F;
@@ -292,7 +301,7 @@ section.half-page {
   width: auto;
   /*
   max-width: 350px;
-  background-image: url("../img/leaf_main_left_top_side.png");
+  background-image: url("/img/leaf_main_left_top_side.png");
   */
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -497,94 +506,94 @@ border-bottom: 2px solid $green;
   animation-timing-function: ease-in;
 }
 .randomDelay span:nth-child(1) {
-  animation-delay: 0.8s;
+  animation-delay: 1.2s;
 }
 .randomDelay span:nth-child(2) {
-  animation-delay: 0.7s;
+  animation-delay: 0.5s;
 }
 .randomDelay span:nth-child(3) {
-  animation-delay: 0.8s;
+  animation-delay: 0.7s;
 }
 .randomDelay span:nth-child(4) {
   animation-delay: 1s;
 }
 .randomDelay span:nth-child(5) {
-  animation-delay: 1.5s;
+  animation-delay: 0.4s;
 }
 .randomDelay span:nth-child(6) {
   animation-delay: 0.1s;
 }
 .randomDelay span:nth-child(7) {
-  animation-delay: 1s;
+  animation-delay: 1.3s;
 }
 .randomDelay span:nth-child(8) {
-  animation-delay: 1.4s;
+  animation-delay: 1.1s;
 }
 .randomDelay span:nth-child(9) {
-  animation-delay: 0.6s;
+  animation-delay: 0.1s;
 }
 .randomDelay span:nth-child(10) {
-  animation-delay: 0.5s;
+  animation-delay: 0.1s;
 }
 .randomDelay span:nth-child(11) {
   animation-delay: 1.5s;
 }
 .randomDelay span:nth-child(12) {
-  animation-delay: 0.4s;
+  animation-delay: 0.6s;
 }
 .randomDelay span:nth-child(13) {
-  animation-delay: 1.1s;
+  animation-delay: 0.4s;
 }
 .randomDelay span:nth-child(14) {
-  animation-delay: 1.3s;
+  animation-delay: 0.8s;
 }
 .randomDelay span:nth-child(15) {
-  animation-delay: 0.3s;
+  animation-delay: 0.9s;
 }
 .randomDelay span:nth-child(16) {
-  animation-delay: 0.6s;
-}
-.randomDelay span:nth-child(17) {
-  animation-delay: 0.6s;
-}
-.randomDelay span:nth-child(18) {
-  animation-delay: 0.5s;
-}
-.randomDelay span:nth-child(19) {
-  animation-delay: 1s;
-}
-.randomDelay span:nth-child(20) {
-  animation-delay: 0.9s;
-}
-.randomDelay span:nth-child(21) {
-  animation-delay: 1.5s;
-}
-.randomDelay span:nth-child(22) {
-  animation-delay: 0.6s;
-}
-.randomDelay span:nth-child(23) {
-  animation-delay: 0.2s;
-}
-.randomDelay span:nth-child(24) {
-  animation-delay: 1.5s;
-}
-.randomDelay span:nth-child(25) {
-  animation-delay: 0.1s;
-}
-.randomDelay span:nth-child(26) {
-  animation-delay: 0.6s;
-}
-.randomDelay span:nth-child(27) {
   animation-delay: 1.4s;
 }
-.randomDelay span:nth-child(28) {
+.randomDelay span:nth-child(17) {
   animation-delay: 1.1s;
 }
-.randomDelay span:nth-child(29) {
+.randomDelay span:nth-child(18) {
+  animation-delay: 1.2s;
+}
+.randomDelay span:nth-child(19) {
+  animation-delay: 1.2s;
+}
+.randomDelay span:nth-child(20) {
+  animation-delay: 0.2s;
+}
+.randomDelay span:nth-child(21) {
+  animation-delay: 0.2s;
+}
+.randomDelay span:nth-child(22) {
+  animation-delay: 0.7s;
+}
+.randomDelay span:nth-child(23) {
+  animation-delay: 0.5s;
+}
+.randomDelay span:nth-child(24) {
+  animation-delay: 1.4s;
+}
+.randomDelay span:nth-child(25) {
+  animation-delay: 0.2s;
+}
+.randomDelay span:nth-child(26) {
+  animation-delay: 1.5s;
+}
+.randomDelay span:nth-child(27) {
+  animation-delay: 0.1s;
+}
+.randomDelay span:nth-child(28) {
   animation-delay: 1.3s;
 }
+.randomDelay span:nth-child(29) {
+  animation-delay: 1.2s;
+}
 .randomDelay span:nth-child(30) {
-  animation-delay: 0.9s;
+  animation-delay: 0.3s;
 }
 
 @-webkit-keyframes easeInLetter {

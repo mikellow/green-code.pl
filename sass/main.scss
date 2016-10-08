@@ -64,6 +64,7 @@ h2 {
 nav {
     &.top-menu {
         position: relative;
+        z-index: 999;
         .desktop {
             position: fixed;
             top: 0px;
@@ -178,6 +179,17 @@ section {
     &.half-page {
         width: 100%;
         min-height:50%;
+    }
+}
+
+#askUsForm {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 300;
+    background-color: red;
+    &.on-right {
+
     }
 }
 
