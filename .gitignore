@@ -1,6 +1,7 @@
 .sass-cache
 node_modules
 old_pages
+app/assets/css
 $ cat .gitignore
 # exclude everything except directory foo/bar
 # !/app
