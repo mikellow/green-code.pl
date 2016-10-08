@@ -185,12 +185,7 @@ section {
 }
 
 #askUsFormToggle {
-<<<<<<< HEAD
-    display: none;
-    position: fixed;
-=======
     position: absolute;
->>>>>>> askUsForm
     top:0px;
     right:0px;
     z-index: 999;
@@ -222,8 +217,6 @@ section {
 }
 
 #askUsForm {
-    display: none;
-    position: absolute;
     top:0px;
     left:0px;
     z-index: 300;
