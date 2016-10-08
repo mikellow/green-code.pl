@@ -1,1 +1,6 @@
+.sass-cache
 node_modules
+old_pages
+$ cat .gitignore
+# exclude everything except directory foo/bar
+# !/app
