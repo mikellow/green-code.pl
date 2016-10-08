@@ -115,12 +115,6 @@ nav {
     }
 }
 
-.page-content {
-    display: block;
-    width: 100%;
-    height:100%;
-}
-
 section {
     position: relative;
     z-index: 100;
@@ -182,14 +176,34 @@ section {
     }
 }
 
+.page-content {
+    display: block;
+    width: 100%;
+    height:100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#askUsFormToggle {
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 999;
+    background-color: green;
+}
+
 #askUsForm {
     position: absolute;
     top:0px;
     left:0px;
     z-index: 300;
     background-color: red;
-    &.on-right {
 
+    &.hidden {
+        transform : translateX(25vw);
+    }
+    &.visible {
+        transform : translateX(0);
     }
 }
 
