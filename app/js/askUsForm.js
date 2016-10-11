@@ -11,7 +11,9 @@
 
     function showContactForm (parentNodeId) {
         activeSlide = document.getElementById(parentNodeId);
-        var topPos = activeSlide.offsetTop;
+        /*var topPos = activeSlide.offsetTop;*/
+        var topPos = document.body.scrollTop;
+
         console.log('showContactForm topPos', topPos);
         contactForm.style.top = topPos + 'px';
         contactForm.classList.remove("hidden");
