@@ -253,15 +253,15 @@ section {
     }
     &.visible {
         z-index: $ask-us-form-z-index;
-        
+
         .form-content {
             /*right: 0px;*/
-            /*transform: translateX(0);*/    
+            /*transform: translateX(0);*/
             animation-name: showFromLeft;
             animation-duration: #{$ask-form-toggle-time}s;
             animation-fill-mode: forwards;
             animation-timing-function: ease-in;
-            
+
         }
     }
 
@@ -382,7 +382,7 @@ section {
         left:0px;
         z-index: 102;
         background: transparent url(https://s22.postimg.org/e3d7gukdt/bg_pattern_2.png) repeat top left;
-        background-color: rgba(40, 115, 95, 0.75);
+        background-color: rgba(40, 115, 95, 0.35);
 
     }
 }
