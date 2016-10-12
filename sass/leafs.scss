@@ -1,0 +1,60 @@
+/* leafs */
+.leafs {
+    position: absolute;
+    z-index: 101;
+    display: flex;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    /*
+    animation-name: leafMove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    */
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+
+    &.home {
+        width: auto;
+        height: 100%;
+
+        &.top {
+            right: 0px;
+            top: 0px;
+        }
+        &.bottom {
+            right: 0px;
+            bottom: 0px;
+        }
+
+
+    }
+
+    &.design {
+        &.left {
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    &.contact {
+        width: auto;
+        height: 100%;
+
+        &.bottom {
+            bottom: 0px;
+
+            &.right {
+                right: 0px;
+                bottom: -250px;
+            }
+
+            &.left {
+                left: 0px;
+            }
+        }
+    }
+}

@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 
 
-gulp.task('styles', function() {
+gulp.task('compileStyles', function() {
   //return sass('sass', { style: 'expanded' })
   return sass('sass/**/*.scss', { style: 'expanded' })
     .on('error', sass.logError)
@@ -17,6 +17,7 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('app/assets/css'));
 });
 
+
 /*
 gulp.task('sass', () =>
   sass('source/file.scss')
@@ -24,8 +25,9 @@ gulp.task('sass', () =>
     .pipe(gulp.dest('result'))
 );
 */
+
 gulp.task('watch', function() {
-  gulp.watch('sass/*.scss', ['styles']);
+  gulp.watch('sass/*.scss', ['compileStyles']);
   gulp.watch('app/*.html', notifyLiveReload);
   gulp.watch('app/assets/css/*.css', notifyLiveReload);
   gulp.watch('app/js/*.js', notifyLiveReload);

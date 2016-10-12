@@ -34,7 +34,7 @@
   </nav>
 
 
-  <div id="left-cover" class="leaves">
+  <div id="left-cover" class="leafs">
     <img src="assets/img/leaf_main_left_top_side.png" align="top"/>
   </div>
 
@@ -50,10 +50,10 @@
   <div class="page-content">
 
     <section id="home" class="slide full-page green no-overflow">
-      <div class="leaves home top">
+      <div class="leafs home top">
         <img src="assets/img/leaf_main_right_top_side.png" align="top"/>
       </div>
-      <div class="leaves home bottom">
+      <div class="leafs home bottom">
         <img src="assets/img/leaf_main_right_side.png" align="bottom"/>
       </div>
       <div class="welcome-text">
@@ -101,34 +101,15 @@
           </div>
       </div>
 
-<!--
-      <div class="video-container">
-                <div class="filter"></div>
-                <video autoplay loop class="fillWidth">
-                    <source src="assets/videos/MP4/White-Keyboard.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                    <source src="assets/videos/WEBM/White-Keyboard.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                </video>
-                <div class="poster hidden">
-                    <img src="PATH_TO_JPEG" alt="">
-                </div>
-            </div>
-      <div class="video-container">
-          <div class="filter"></div>
-          <video autoplay loop class="fillWidth">
-              <source src="assets/videos/MP4/Love-Coding.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-              <source src="assets/videos/WEBM/Love-Coding.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-          </video>
-          <div class="poster hidden">
-              <img src="PATH_TO_JPEG" alt="">
-          </div>
-      </div>
--->
     </section>
     <section id="code" class="slide full-page">
       <div class="triangle-left-top-green"></div>
       <div class="content">
         <div class="left">
-          <h2 class="font-white">Code<span class="animated-last-char"></span></h2>
+          <h2 class="font-white">
+            Code
+            <!--<span class="animated-last-char"></span>-->
+          </h2>
         </div>
         <div class="right">
           <h3>We make code.</h3>
@@ -144,7 +125,7 @@
     </section>
     <section id="design" class="slide full-page">
       <div class="triangle-right-bottom green"></div>
-      <div class="leaves design left">
+      <div class="leafs design left">
         <img src="assets/img/leaf_left_design.png" align="top"/>
       </div>
       <div class="content">
@@ -191,18 +172,40 @@
       </div>
     </section>
     <section id="contact" class="slide full-page">
-      <div class="leaves contact bottom left">
+      <div class="leafs contact bottom left">
         <img src="assets/img/leaf_left_contact.png" align="bottom"/>
       </div>
-      <div class="leaves contact bottom right">
+      <div class="leafs contact bottom right">
         <img src="assets/img/leaf_right_contact.png" align="bottom"/>
       </div>
       <div class="content">
         <div class="left">
           <h2 >Contact</h2>
+          <div class="email-link">
+            <span>MAIL.</span>
+            <a href="#">contact@green-code.pl</a>
+          </div>
         </div>
         <div class="right">
           <h3>Let's talk.</h3>
+          <form class="contact">
+            <div class="row">
+              <label for="name">Name</label>
+              <input type="text" id="name" value=""></input>
+            </div>
+            <div class="row">
+              <label for="email">Email</label>
+              <input type="text" id="email" value=""></input>
+            </div>
+            <div class="row">
+              <label for="message">Message</label>
+              <textarea rows="4" cols="50" id="message">
+              </textarea>
+            </div>
+            <div class="row buttons">
+              <button>SEND</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
