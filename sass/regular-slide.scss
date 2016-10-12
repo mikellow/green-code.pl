@@ -5,15 +5,20 @@ section {
     h2 {
         color: black;
         font-size: $h2size;
+        line-height: 40px;
         text-transform: uppercase;
         display: inline-block;
+        margin: 0px;
+
     }
 
     &.slide {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        padding: 180px 0 0 0;
+        box-sizing: border-box;
 
         .content {
             z-index:200;
@@ -24,14 +29,14 @@ section {
             justify-content: flex-start;
             align-items: flex-start;
             width: 100%;
-            min-height: 400px;
+            min-height: 350px;
             max-width: $section-content-max-width;
 
             .left {
                 box-sizing: border-box;
                 width: $section-content-left-width;
                 flex-shrink: 0;
-                padding: 0 0;
+                padding: 0;
 
                 h2 {
                     word-break: break-word;
@@ -40,7 +45,7 @@ section {
             .right {
                 /*width: 70%;*/
                 box-sizing: border-box;
-                padding: 0 0 0 0;
+                padding: 0;
                 flex-grow: 1;
             }
         }

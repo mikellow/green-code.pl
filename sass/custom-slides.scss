@@ -1,21 +1,38 @@
+/*
+section#home{
+    background-color: rgba(40, 115, 95, 0.35);
+}
+*/
+
 section#contact {
     overflow: hidden;
+
     .content {
         .left {
             position: absolute;
             width: $section-content-left-width + 200px;
             height: 100%;
             flex-grow: 1;
+            padding: 0 150px 0 0;
+
+            h2 {
+                height: 100px;
+            }
+
+            .text {
+            }
 
             .email-link {
                 z-index: $regular-item-z-index;
                 position: absolute;
-                bottom:50px;
+                bottom:0px;
                 left:0px;
+                font-size: 20px;
             }
         }
         .right {
             margin-left: $section-content-left-width + 200px;
+            margin-top: 100px;
         }
     }
 
@@ -28,7 +45,15 @@ section#contact {
         justify-content: flex-start;
         align-items : stretch;
 
+        button {
+            border: 1px solid $greenDark;
+            background-color: $greenDark;
+            color: white;
+            padding: 5px 10px;
+        }
+
         .row {
+            position: relative;
             display: block;
 
             label {
@@ -44,12 +69,14 @@ section#contact {
                 box-sizing: border-box;
                 flex-grow: 1;
                 width: 100%;
-                border: 1px solid $greenDark;
+                border: 2px solid $greenDark;
                 padding: 5px;
             }
 
             &.buttons {
-
+                button {
+                    float: right;
+                }
             }
         }
     }

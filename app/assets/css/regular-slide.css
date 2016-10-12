@@ -8,11 +8,11 @@ Error: Undefined variable: "$h2size".
 5:     h2 {
 6:         color: black;
 7:         font-size: $h2size;
-8:         text-transform: uppercase;
-9:         display: inline-block;
-10:     }
-11: 
-12:     &.slide {
+8:         line-height: 40px;
+9:         text-transform: uppercase;
+10:         display: inline-block;
+11:         margin: 0px;
+12: 
 
 Backtrace:
 sass/regular-slide.scss:7
@@ -77,4 +77,4 @@ sass/regular-slide.scss:7
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$h2size\".\A         on line 7 of sass/regular-slide.scss\A \A 2:     position: relative;\A 3:     z-index: 100;\A 4: \A 5:     h2 {\A 6:         color: black;\A 7:         font-size: $h2size;\A 8:         text-transform: uppercase;\A 9:         display: inline-block;\A 10:     }\A 11: \A 12:     &.slide {"; }
+  content: "Error: Undefined variable: \"$h2size\".\A         on line 7 of sass/regular-slide.scss\A \A 2:     position: relative;\A 3:     z-index: 100;\A 4: \A 5:     h2 {\A 6:         color: black;\A 7:         font-size: $h2size;\A 8:         line-height: 40px;\A 9:         text-transform: uppercase;\A 10:         display: inline-block;\A 11:         margin: 0px;\A 12: "; }

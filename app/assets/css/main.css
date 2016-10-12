@@ -11,14 +11,18 @@ section {
 section h2 {
   color: black;
   font-size: 46px;
+  line-height: 40px;
   text-transform: uppercase;
   display: inline-block;
+  margin: 0px;
 }
 section.slide {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 180px 0 0 0;
+  box-sizing: border-box;
 }
 section.slide .content {
   z-index: 200;
@@ -28,14 +32,14 @@ section.slide .content {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  min-height: 400px;
+  min-height: 350px;
   max-width: 900px;
 }
 section.slide .content .left {
   box-sizing: border-box;
   width: 320px;
   flex-shrink: 0;
-  padding: 0 0;
+  padding: 0;
 }
 section.slide .content .left h2 {
   word-break: break-word;
@@ -43,7 +47,7 @@ section.slide .content .left h2 {
 section.slide .content .right {
   /*width: 70%;*/
   box-sizing: border-box;
-  padding: 0 0 0 0;
+  padding: 0;
   flex-grow: 1;
 }
 section.slide.full-page {
@@ -58,6 +62,11 @@ section.slide.green {
   background-color: #28735F;
 }
 
+/*
+section#home{
+    background-color: rgba(40, 115, 95, 0.35);
+}
+*/
 section#contact {
   overflow: hidden;
 }
@@ -66,15 +75,21 @@ section#contact .content .left {
   width: 520px;
   height: 100%;
   flex-grow: 1;
+  padding: 0 150px 0 0;
+}
+section#contact .content .left h2 {
+  height: 100px;
 }
 section#contact .content .left .email-link {
   z-index: 100;
   position: absolute;
-  bottom: 50px;
+  bottom: 0px;
   left: 0px;
+  font-size: 20px;
 }
 section#contact .content .right {
   margin-left: 520px;
+  margin-top: 100px;
 }
 section#contact form.contact {
   max-width: 350px;
@@ -84,7 +99,14 @@ section#contact form.contact {
   justify-content: flex-start;
   align-items: stretch;
 }
+section#contact form.contact button {
+  border: 1px solid #1C413A;
+  background-color: #1C413A;
+  color: white;
+  padding: 5px 10px;
+}
 section#contact form.contact .row {
+  position: relative;
   display: block;
 }
 section#contact form.contact .row label {
@@ -99,8 +121,11 @@ section#contact form.contact .row input, section#contact form.contact .row texta
   box-sizing: border-box;
   flex-grow: 1;
   width: 100%;
-  border: 1px solid #1C413A;
+  border: 2px solid #1C413A;
   padding: 5px;
+}
+section#contact form.contact .row.buttons button {
+  float: right;
 }
 
 /* leafs */
@@ -168,8 +193,8 @@ a:hover {
   text-decoration: underline;
 }
 
-h2.center {
-  text-align: center;
+h2, h3 {
+  margin: 0px;
 }
 
 .font-white {
@@ -365,8 +390,10 @@ nav.top-menu .desktop .logo-icon {
 }
 .welcome-text {
   /*border: 1px solid red;*/
-  position: relative;
-  z-index: 101;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  z-index: 300;
   width: 320px;
   text-align: justify;
   font-size: 20px;
@@ -398,6 +425,7 @@ nav.top-menu .desktop .logo-icon {
   width: 100%;
   height: 100%;
   z-index: 100;
+  mix-blend-mode: luminosity;
 }
 .video-container video {
   object-fit: cover;
@@ -412,7 +440,8 @@ nav.top-menu .desktop .logo-icon {
   left: 0px;
   z-index: 102;
   background: transparent url(https://s22.postimg.org/e3d7gukdt/bg_pattern_2.png) repeat top left;
-  background-color: rgba(40, 115, 95, 0.35);
+  /* background-color: rgba(40, 115, 95, 0.35); */
+  background-color: rgba(3, 58, 22, 0.58);
 }
 
 /* main parts end */
@@ -427,10 +456,10 @@ nav.top-menu .desktop .logo-icon {
   /* filter: url(https://s22.postimg.org/e3d7gukdt/bg_pattern_2.png); */
   filter: url(../img/pattern.svg);
   /*filter: blur(20px);*/
-  border-top: 36vh solid #28735F;
-  border-left: calc(36vh*1.3) solid #28735F;
-  border-right: calc(36vh*1.3) solid transparent;
-  border-bottom: 36vh solid transparent;
+  border-top: 17vh solid #28735F;
+  border-left: calc(17vh*1.3) solid #28735F;
+  border-right: calc(17vh*1.3) solid transparent;
+  border-bottom: 17vh solid transparent;
 }
 
 .triangle-right-bottom {
@@ -683,94 +712,94 @@ border-bottom: 2px solid $green;
   animation-timing-function: ease-in;
 }
 .randomDelay span:nth-child(1) {
-  animation-delay: 1.1s;
-}
-.randomDelay span:nth-child(2) {
-  animation-delay: 1.5s;
-}
-.randomDelay span:nth-child(3) {
   animation-delay: 0.7s;
 }
+.randomDelay span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.randomDelay span:nth-child(3) {
+  animation-delay: 0.9s;
+}
 .randomDelay span:nth-child(4) {
-  animation-delay: 1.4s;
-}
-.randomDelay span:nth-child(5) {
-  animation-delay: 1.5s;
-}
-.randomDelay span:nth-child(6) {
-  animation-delay: 1.2s;
-}
-.randomDelay span:nth-child(7) {
-  animation-delay: 0.3s;
-}
-.randomDelay span:nth-child(8) {
   animation-delay: 0.8s;
 }
+.randomDelay span:nth-child(5) {
+  animation-delay: 0.6s;
+}
+.randomDelay span:nth-child(6) {
+  animation-delay: 1.3s;
+}
+.randomDelay span:nth-child(7) {
+  animation-delay: 0.2s;
+}
+.randomDelay span:nth-child(8) {
+  animation-delay: 1.1s;
+}
 .randomDelay span:nth-child(9) {
-  animation-delay: 0.3s;
+  animation-delay: 1.4s;
 }
 .randomDelay span:nth-child(10) {
   animation-delay: 1.2s;
 }
 .randomDelay span:nth-child(11) {
-  animation-delay: 1.4s;
-}
-.randomDelay span:nth-child(12) {
-  animation-delay: 0.1s;
-}
-.randomDelay span:nth-child(13) {
   animation-delay: 1.2s;
 }
-.randomDelay span:nth-child(14) {
-  animation-delay: 1.3s;
-}
-.randomDelay span:nth-child(15) {
-  animation-delay: 0.2s;
-}
-.randomDelay span:nth-child(16) {
-  animation-delay: 0.6s;
-}
-.randomDelay span:nth-child(17) {
-  animation-delay: 0.6s;
-}
-.randomDelay span:nth-child(18) {
-  animation-delay: 0.9s;
-}
-.randomDelay span:nth-child(19) {
-  animation-delay: 0.6s;
-}
-.randomDelay span:nth-child(20) {
-  animation-delay: 0.9s;
-}
-.randomDelay span:nth-child(21) {
-  animation-delay: 0.1s;
-}
-.randomDelay span:nth-child(22) {
-  animation-delay: 0.9s;
-}
-.randomDelay span:nth-child(23) {
-  animation-delay: 1.5s;
-}
-.randomDelay span:nth-child(24) {
-  animation-delay: 0.9s;
-}
-.randomDelay span:nth-child(25) {
+.randomDelay span:nth-child(12) {
   animation-delay: 0.3s;
 }
-.randomDelay span:nth-child(26) {
+.randomDelay span:nth-child(13) {
   animation-delay: 0.2s;
 }
-.randomDelay span:nth-child(27) {
-  animation-delay: 1.4s;
+.randomDelay span:nth-child(14) {
+  animation-delay: 1.2s;
 }
-.randomDelay span:nth-child(28) {
-  animation-delay: 1.4s;
+.randomDelay span:nth-child(15) {
+  animation-delay: 1.1s;
 }
-.randomDelay span:nth-child(29) {
+.randomDelay span:nth-child(16) {
+  animation-delay: 1.3s;
+}
+.randomDelay span:nth-child(17) {
+  animation-delay: 0.1s;
+}
+.randomDelay span:nth-child(18) {
+  animation-delay: 1s;
+}
+.randomDelay span:nth-child(19) {
+  animation-delay: 1.3s;
+}
+.randomDelay span:nth-child(20) {
+  animation-delay: 1.3s;
+}
+.randomDelay span:nth-child(21) {
+  animation-delay: 0.9s;
+}
+.randomDelay span:nth-child(22) {
   animation-delay: 1.5s;
 }
-.randomDelay span:nth-child(30) {
+.randomDelay span:nth-child(23) {
+  animation-delay: 0.6s;
+}
+.randomDelay span:nth-child(24) {
+  animation-delay: 1.2s;
+}
+.randomDelay span:nth-child(25) {
+  animation-delay: 1.5s;
+}
+.randomDelay span:nth-child(26) {
+  animation-delay: 0.8s;
+}
+.randomDelay span:nth-child(27) {
+  animation-delay: 0.2s;
+}
+.randomDelay span:nth-child(28) {
+  animation-delay: 0.3s;
+}
+.randomDelay span:nth-child(29) {
   animation-delay: 1.4s;
+}
+.randomDelay span:nth-child(30) {
+  animation-delay: 0.9s;
 }
 
 @-webkit-keyframes easeInLetter {
