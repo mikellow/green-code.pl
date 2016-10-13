@@ -58,3 +58,51 @@
         }
     }
 }
+
+.leafs {
+    &.left {
+        transform: translate(-100%);
+    }
+    &.right {
+        transform: translate(100%);
+    }
+}
+
+.visible {
+    .leafs {
+        animation-name: returnToOrigin;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+}
+
+#home.visible {
+    &-r1{
+
+    }
+    &-r2{
+
+    }
+}
+
+#design.visible {
+    &-l1{
+
+    }
+}
+
+#contact.visible {
+    &-l1{
+
+    }
+    &-r1{
+
+    }
+}
+
+@keyframes returnToOrigin {
+    100%{
+        transform: translate(0);
+    }
+}
