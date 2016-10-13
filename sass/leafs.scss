@@ -77,27 +77,27 @@
     }
 }
 
-#home.visible {
+#home {
     &-r1{
-
+        animation-delay: 0.8s;
     }
     &-r2{
-
+        animation-delay: 0.0s;
     }
 }
 
-#design.visible {
+#design {
     &-l1{
 
     }
 }
 
-#contact.visible {
+#contact {
     &-l1{
-
+        animation-delay: 0.8s;
     }
     &-r1{
-
+        animation-delay: 0.0s;
     }
 }
 

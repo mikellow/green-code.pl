@@ -61,6 +61,20 @@
   animation-timing-function: ease-in;
 }
 
+#home-r1 {
+  animation-delay: 0.8s;
+}
+#home-r2 {
+  animation-delay: 0.0s;
+}
+
+#contact-l1 {
+  animation-delay: 0.8s;
+}
+#contact-r1 {
+  animation-delay: 0.0s;
+}
+
 @keyframes returnToOrigin {
   100% {
     transform: translate(0);
