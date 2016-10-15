@@ -1,16 +1,11 @@
-/*
-section#home{
-    background-color: rgba(40, 115, 95, 0.35);
-}
-*/
-
 section#contact {
     overflow: hidden;
 
     .content {
         .left {
             position: absolute;
-            width: $section-content-left-width + 200px;
+            /* width: calc(#{$section-content-left-width} + 200)px; */
+            width: $section-content-left-width + 200;
             height: 100%;
             flex-grow: 1;
             padding: 0 150px 0 0;
@@ -31,7 +26,8 @@ section#contact {
             }
         }
         .right {
-            margin-left: $section-content-left-width + 200px;
+            /* width: calc(#{$section-content-left-width} + 200)px; */
+            margin-left: $section-content-left-width + 200;
             margin-top: 100px;
         }
     }

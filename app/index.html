@@ -11,8 +11,9 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
   -->
 </head>
-<body>
-
+<!-- <body onscroll="scrollScript(event)"> -->
+<body> 
+  <div id="visibilityStartLine"></div>
   <nav class="top-menu">
     <div class="desktop">
       <ul class="horizontal">
@@ -38,7 +39,7 @@
     <img src="assets/img/leaf_main_left_top_side.png" align="top"/>
   </div>
 
-  <section id="askUsForm" class="slide full-page">
+  <section id="askUsForm" class="full-page">
       <div class="form-content">
         <div id="askUsFormToggle">
           <button class="contact-button" slide="askUsForm">X</button>
@@ -48,8 +49,7 @@
     </section>
 
   <div class="page-content">
-
-    <section id="home" class="slide full-page green no-overflow visible">
+    <section id="home" class="slide full-page green no-overflow homepage-hero-module">
       <div class="leafs home top right" id="home-r1">
         <img src="assets/img/leaf_main_right_top_side.png" align="top"/>
       </div>
@@ -102,7 +102,7 @@
       </div>
 
     </section>
-    <section id="code" class="slide full-page visible">
+    <section id="code" class="slide full-page " data-scroll-reveal="enter left and move 50px over 1.33s">
       <div class="triangle-left-top-green"></div>
       <div class="content">
         <div class="left">
@@ -113,17 +113,26 @@
         </div>
         <div class="right">
           <h3>We make code.</h3>
+          <p>
+            Jeśli potrzebujesz strony internetowej, aplikacji webowej bądź interaktywnej wizytówki swojej firmy dobrze trafiłeś. Zaprojektujemy dla Ciebie w pełni responywną stronę internetową charakteryzującą się nowocześnością i wysoką dbałością o detale.
+            Tworzone przez nas strony internetowe oparte są na najnowszych technologiach oraz na najciekawszych trendach designu i user experience. 
+          </p>
+
           <ul>
+            <li>companies portfolies</li>
             <li>websites</li>
+            <li>shops</li>
             <li>web applications</li>
             <li>cms</li>
+            <li>modern design</li>
             <li>psd2html</li>
+            <li>hosting</li>
           </ul>
           <button class="contact-button" slide="code">Let's talk about that</button>
         </div>
       </div>
     </section>
-    <section id="design" class="slide full-page visible">
+    <section id="design" class="slide full-page ">
       <div class="triangle-right-bottom green" ></div>
       <div class="leafs design left" id="design-l1">
         <img src="assets/img/leaf_left_design.png" align="top"/>
@@ -134,6 +143,7 @@
         </div>
         <div class="right">
           <h3>We design things.</h3>
+            
           <ul>
             <li>posters</li>
             <li>logotypes</li>
@@ -144,7 +154,8 @@
         </div>
       </div>
     </section>
-    <section id="ecommerce" class="slide full-page green visible">
+    
+    <section id="ecommerce" class="slide full-page green ">
       <div class="triangle-right-bottom white"></div>
       <div class="content">
         <div class="left">
@@ -161,7 +172,7 @@
         </div>
       </div>
     </section>
-    <section id="examples" class="slide full-page visible">
+    <section id="examples" class="slide full-page ">
       <div class="content">
         <div class="left">
           <h2>Examples</h2>
@@ -171,7 +182,7 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="slide full-page visible">
+    <section id="contact" class="slide full-page ">
       <div class="leafs contact bottom left" id="contact-l1">
         <img src="assets/img/leaf_left_contact.png" align="bottom"/>
       </div>
@@ -214,7 +225,10 @@
       </div>
     </section>
   </div>
-
+<script src="js/libs/jquery-3.1.1.min.js"></script>
+<script src="js/coverr.js"></script>
+<script src="js/askUsForm.js"></script>
+<script src="js/scrollCtrl.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -224,7 +238,8 @@
   ga('create', 'UA-78122128-1', 'auto');
   ga('send', 'pageview');
 </script>
+<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 
-<script src="js/askUsForm.js"></script>
+
 </body>
 </html>
